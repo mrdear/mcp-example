@@ -1,6 +1,6 @@
 import os
 
-from server import Env, serve
+from .server import Env, serve
 
 
 def main_cli():

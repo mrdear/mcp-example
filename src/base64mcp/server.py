@@ -58,7 +58,7 @@ def serve(env: Env):
     def decode(data: str):
         """decode base64 to str"""
         # 1. 将输入的 Base64 字符串编码为字节串 (通常是 ASCII 或 UTF-8)
-        base64_bytes = data.encode('utf-8')
+        base64_bytes = data.encode('ascii')
         try:
             # 2. 使用 b64decode 进行 Base64 解码
             decoded_bytes = base64.b64decode(base64_bytes)
